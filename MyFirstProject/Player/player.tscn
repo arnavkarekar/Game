@@ -1,33 +1,61 @@
 [gd_scene load_steps=18 format=3 uid="uid://7t5v70hlvf1c"]
 
 [ext_resource type="Script" path="res://Player/player.gd" id="1_vu46s"]
-[ext_resource type="Texture2D" uid="uid://diholplmhge2g" path="res://Sunny-land-files(1)/Sunny-land-files/Graphical Assets/sprites/player/hurt/player-hurt-1.png" id="2_gpcb3"]
-[ext_resource type="Texture2D" uid="uid://c22snux1vrrdc" path="res://Sunny-land-files(1)/Sunny-land-files/Graphical Assets/sprites/player/hurt/player-hurt-2.png" id="3_buaao"]
-[ext_resource type="Texture2D" uid="uid://b5fvjlbixom4a" path="res://Sunny-land-files(1)/Sunny-land-files/Graphical Assets/sprites/player/idle/player-idle-1.png" id="4_tmu5q"]
-[ext_resource type="Texture2D" uid="uid://ba67imp5d4ye6" path="res://Sunny-land-files(1)/Sunny-land-files/Graphical Assets/sprites/player/idle/player-idle-2.png" id="5_3711c"]
-[ext_resource type="Texture2D" uid="uid://c3cwkpptyxv1c" path="res://Sunny-land-files(1)/Sunny-land-files/Graphical Assets/sprites/player/idle/player-idle-3.png" id="6_koh23"]
-[ext_resource type="Texture2D" uid="uid://bpfay5jpxg4x3" path="res://Sunny-land-files(1)/Sunny-land-files/Graphical Assets/sprites/player/idle/player-idle-4.png" id="7_2guxx"]
-[ext_resource type="Texture2D" uid="uid://us43v1s463wp" path="res://Sunny-land-files(1)/Sunny-land-files/Graphical Assets/sprites/player/jump/player-jump-1.png" id="8_ynjhl"]
-[ext_resource type="Texture2D" uid="uid://hnnakynwjfsg" path="res://Sunny-land-files(1)/Sunny-land-files/Graphical Assets/sprites/player/jump/player-jump-2.png" id="9_h6l4w"]
-[ext_resource type="Texture2D" uid="uid://cidb4kti4t1t" path="res://Sunny-land-files(1)/Sunny-land-files/Graphical Assets/sprites/player/run/player-run-1.png" id="10_t8goq"]
-[ext_resource type="Texture2D" uid="uid://d086cteua7bqi" path="res://Sunny-land-files(1)/Sunny-land-files/Graphical Assets/sprites/player/run/player-run-2.png" id="11_uhq5s"]
-[ext_resource type="Texture2D" uid="uid://cpwr6bibyv6x8" path="res://Sunny-land-files(1)/Sunny-land-files/Graphical Assets/sprites/player/run/player-run-3.png" id="12_ol5s8"]
-[ext_resource type="Texture2D" uid="uid://bq7b8nojslrks" path="res://Sunny-land-files(1)/Sunny-land-files/Graphical Assets/sprites/player/run/player-run-4.png" id="13_5nnxp"]
-[ext_resource type="Texture2D" uid="uid://dwsm1lg0khpyr" path="res://Sunny-land-files(1)/Sunny-land-files/Graphical Assets/sprites/player/run/player-run-5.png" id="14_7mhh7"]
-[ext_resource type="Texture2D" uid="uid://see2qoat7g17" path="res://Sunny-land-files(1)/Sunny-land-files/Graphical Assets/sprites/player/run/player-run-6.png" id="15_cmcrt"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qat2a"]
 radius = 11.0
 height = 34.0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4d6rg"]
+load_path = "res://.godot/imported/player-hurt-1.png-63296f69797c1a39a6d5a7ddc6aa1519.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5qwbm"]
+load_path = "res://.godot/imported/player-hurt-2.png-9f67839846ad483bc7b15027e7e87779.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hff8k"]
+load_path = "res://.godot/imported/player-idle-1.png-6a4393d84c7454f9f6d1866831d0ac54.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5ss26"]
+load_path = "res://.godot/imported/player-idle-2.png-1bab0f5ef32b47d79cd053cb8bae61c4.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vahpk"]
+load_path = "res://.godot/imported/player-idle-3.png-46843078f2cccac54482a359672b379f.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kkv3y"]
+load_path = "res://.godot/imported/player-idle-4.png-a071397060618c45300b2f927ba55936.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jtpu7"]
+load_path = "res://.godot/imported/player-jump-1.png-8dcd24fcec0ce5a0bd4ef5b211e4e1c3.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_30y02"]
+load_path = "res://.godot/imported/player-jump-2.png-f7b272ca6db869d883134ce53d3c7f3e.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_nkbrk"]
+load_path = "res://.godot/imported/player-run-1.png-e51b9514f79d13ed9159250ba46c6f2a.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_almt2"]
+load_path = "res://.godot/imported/player-run-2.png-d89a75c065c3b5a8e7665764d4ff3096.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_04mre"]
+load_path = "res://.godot/imported/player-run-3.png-1f26acf473692665257cbe3cede5ab47.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_360gb"]
+load_path = "res://.godot/imported/player-run-4.png-09384b5034d769ce56db9b8472e99249.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fgaxm"]
+load_path = "res://.godot/imported/player-run-5.png-b9969aefb3223e868c474e1d7a170cb6.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kut3b"]
+load_path = "res://.godot/imported/player-run-6.png-caccbe94da02c1c0a896750170a663b1.ctex"
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_ee1pj"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_gpcb3")
+"texture": SubResource("CompressedTexture2D_4d6rg")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_buaao")
+"texture": SubResource("CompressedTexture2D_5qwbm")
 }],
 "loop": true,
 "name": &"Death",
@@ -35,16 +63,16 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_tmu5q")
+"texture": SubResource("CompressedTexture2D_hff8k")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_3711c")
+"texture": SubResource("CompressedTexture2D_5ss26")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_koh23")
+"texture": SubResource("CompressedTexture2D_vahpk")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_2guxx")
+"texture": SubResource("CompressedTexture2D_kkv3y")
 }],
 "loop": true,
 "name": &"Idle",
@@ -52,10 +80,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("8_ynjhl")
+"texture": SubResource("CompressedTexture2D_jtpu7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_h6l4w")
+"texture": SubResource("CompressedTexture2D_30y02")
 }],
 "loop": true,
 "name": &"Jump",
@@ -63,22 +91,22 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("10_t8goq")
+"texture": SubResource("CompressedTexture2D_nkbrk")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_uhq5s")
+"texture": SubResource("CompressedTexture2D_almt2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_ol5s8")
+"texture": SubResource("CompressedTexture2D_04mre")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_5nnxp")
+"texture": SubResource("CompressedTexture2D_360gb")
 }, {
 "duration": 1.0,
-"texture": ExtResource("14_7mhh7")
+"texture": SubResource("CompressedTexture2D_fgaxm")
 }, {
 "duration": 1.0,
-"texture": ExtResource("15_cmcrt")
+"texture": SubResource("CompressedTexture2D_kut3b")
 }],
 "loop": true,
 "name": &"Run",
