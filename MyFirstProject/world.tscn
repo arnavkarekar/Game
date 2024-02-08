@@ -187,5 +187,6 @@ position = Vector2(276, 115)
 shape = SubResource("CapsuleShape2D_2h87l")
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Player"]
+position = Vector2(1, -4)
 sprite_frames = SubResource("SpriteFrames_amiiu")
 animation = &"Death"
